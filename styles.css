@@ -1,0 +1,780 @@
+/* Establecer el fondo negro en toda la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000; /* Fondo negro */
+    color: #f5f5f5; /* Color de texto blanco para contraste */
+}
+
+/* Estilos del header */
+header {
+    background-color: #FF6F00; /* Naranja fluor */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Agregar el logo al header */
+header .logo {
+    width: 120px; /* Ajusta el tamaño según el logo */
+    height: auto;
+}
+
+/* Estilo de la sección de bienvenida */
+#bienvenida {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+#bienvenida h2 {
+    font-size: 2.5rem;
+    color: #FF6F00; /* Naranja fluor */
+    margin-bottom: 20px;
+}
+
+#bienvenida p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bienvenida button {
+    background-color: #FF6F00;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#bienvenida button:hover {
+    background-color: #ffbb33;
+}
+
+/* Estilo de la sección 'Cómo usar' */
+#como-usar {
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#como-usar h2 {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#como-usar p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo de la sección de funcionalidades */
+#funcionalidades {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#funcionalidades h2 {
+    font-size: 2.4rem;
+    color: #FF6F00;
+    margin-bottom: 30px;
+}
+
+#funcionalidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#funcionalidades ul li {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+#funcionalidades ul li strong {
+    color: #FF6F00;
+    font-weight: bold;
+}
+
+/* Estilo de la sección de contacto */
+#contacto {
+    background-color: #FF6F00;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 30px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contacto button {
+    background-color: #ffffff;
+    color: #FF6F00;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+    background-color: #ffbb33;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    header .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin-bottom: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #bienvenida h2 {
+        font-size: 2rem;
+    }
+
+    #bienvenida button {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+
+    #como-usar h2 {
+        font-size: 2rem;
+    }
+
+    #contacto h2 {
+        font-size: 2rem;
+    }
+}
+/*
+
+/* Estilos del cuerpo y otras secciones */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo negro */
+    color: #f5f5f5; /* Texto blanco */
+}
+
+header {
+    background-color: #FF6F00; /* Naranja fluor */
+    padding: 20px 0;
+}
+
+header .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 120px; /* Tamaño del logo */
+    height: auto;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.bienvenida-img {
+    width: 500px; /* 500px de ancho */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px;
+}
+
+
+/* Estilos del cuerpo y otras secciones */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo negro */
+    color: #f5f5f5; /* Texto blanco */
+}
+
+header {
+    background-color: #FF6F00; /* Naranja fluor */
+    padding: 20px 0;
+}
+
+header .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 120px; /* Tamaño del logo */
+    height: auto;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos específicos para la sección de bienvenida */
+#bienvenida {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#bienvenida h2 {
+    font-size: 2.4rem;
+    color: #FF6F00; /* Naranja fluor */
+    margin-top: 20px; /* Espacio sobre el título */
+}
+
+#bienvenida p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bienvenida button {
+    background-color: #FF6F00;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#bienvenida button:hover {
+    background-color: #ffbb33;
+}
+/* Estilo del título */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra negra para dar el efecto de bordes */
+    border: 2px solid black; /* Borde negro alrededor del texto */
+    padding: 10px 20px; /* Espaciado interno para que el texto no toque los bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    display: inline-block; /* Para que el borde se ajuste al texto */
+}
+
+/* Estilo para los textos específicos */
+.subrayado {
+    font-family: 'Arial', sans-serif; /* Cambiar a Arial */
+    color: black; /* Color del texto en negro */
+    text-decoration: underline; /* Subrayado del texto */
+}
+/* Estilo para el logo */
+.logo {
+    width: 120px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: inline-block; /* Permite que el logo esté al lado del texto */
+    margin-right: 20px; /* Añade espacio entre el logo y el título */
+}
+
+/* Estilo del header (barra de navegación) */
+header {
+    background-color: #FF6F00; /* Color de fondo naranja */
+    color: white;
+    padding: 15px 20px;
+    text-align: left; /* Alinea el contenido a la izquierda */
+    display: flex; /* Usa flexbox para alinear el logo y el título */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+/* Quitar el borde o marco negro alrededor del título de la página */
+body {
+    outline: none; /* Asegura que el borde no aparezca en el cuerpo de la página */
+    border: none; /* Elimina cualquier borde alrededor del cuerpo */
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente JurídicoIA bot ARG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo del Asistente JurídicoIA bot" class="logo">
+        <h1>Asistente JurídicoIA bot</h1>
+    </header>
+    <!-- Aquí va el contenido de la página -->
+</body>
+</html>
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 50px;  /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 15px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 15px 20px;         /* Espaciado interno */
+    display: flex;              /* Usamos flexbox para alinear logo y título */
+    align-items: center;        /* Centra verticalmente el contenido */
+    text-align: left;           /* Alinea el texto a la izquierda */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 50px;  /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 15px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header (barra de navegación en la parte superior) */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 15px 20px;         /* Espaciado interno */
+    display: flex;              /* Usamos flexbox para alinear logo y título */
+    align-items: center;        /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    text-align: left;           /* Alinea el texto a la izquierda */
+    position: fixed;            /* Fija el header en la parte superior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    top: 0;                     /* Asegura que esté en la parte superior */
+    z-index: 1000;              /* Asegura que el header esté encima de otros elementos */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Espacio entre el logo y el título */
+}
+/* Estilo para el logo */
+.logo {
+    width: 30px;  /* Tamaño reducido del logo (ajusta el valor según lo necesites) */
+    height: auto; /* Mantiene la proporción original del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 30px;  /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header (barra de navegación en la parte superior) */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 15px 20px;         /* Espaciado interno */
+    display: flex;              /* Usamos flexbox para alinear logo y título */
+    align-items: center;        /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    text-align: left;           /* Alinea el texto a la izquierda */
+    position: fixed;            /* Fija el header en la parte superior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    top: 0;                     /* Asegura que esté en la parte superior */
+    z-index: 1000;              /* Asegura que el header esté encima de otros elementos */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Espacio entre el logo y el título */
+}
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 25px;  /* Tamaño reducido del logo (ajusta el valor según lo necesites) */
+    height: auto; /* Mantiene la proporción original del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header (barra de navegación en la parte superior) */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 8px 20px;          /* Reducido el espaciado interno para hacer la barra más pequeña */
+    display: flex;              /* Usamos flexbox para alinear logo y título */
+    align-items: center;        /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    text-align: left;           /* Alinea el texto a la izquierda */
+    position: fixed;            /* Fija el header en la parte superior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    top: 0;                     /* Asegura que esté en la parte superior */
+    z-index: 1000;              /* Asegura que el header esté encima de otros elementos */
+    border: none;               /* Elimina cualquier borde que pueda tener */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 1.5rem;          /* Reduce el tamaño del texto del título */
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Espacio entre el logo y el título */
+    border: none;               /* Elimina el borde del título */
+}
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 25px;  /* Tamaño reducido del logo (ajusta el valor según lo necesites) */
+    height: auto; /* Mantiene la proporción original del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header (barra de navegación en la parte superior) */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 8px 20px;          /* Reducido el espaciado interno para hacer la barra más pequeña */
+    display: flex;              /* Usamos flexbox para alinear logo y título */
+    align-items: center;        /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    text-align: left;           /* Alinea el texto a la izquierda */
+    position: fixed;            /* Fija el header en la parte superior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    top: 0;                     /* Asegura que esté en la parte superior */
+    z-index: 1000;              /* Asegura que el header esté encima de otros elementos */
+    border: none;               /* Elimina cualquier borde que pueda tener */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 1.5rem;          /* Reduce el tamaño del texto del título */
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Espacio entre el logo y el título */
+    border: none;               /* Elimina el borde del título */
+}
+
+/* Contenido debajo del header */
+main {
+    margin-top: 80px;  /* Margen superior para que el contenido no quede tapado por la barra */
+}
+
+/* Estilos generales del contenido de la página */
+p {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 30px;  /* Tamaño reducido del logo (ajusta el valor según lo necesites) */
+    height: auto; /* Mantiene la proporción original del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header (barra de navegación en la parte superior) */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 10px 20px;         /* Aumenté ligeramente el padding */
+    display: flex;              /* Usamos flexbox para alinear logo y título */
+    align-items: center;        /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    text-align: left;           /* Alinea el texto a la izquierda */
+    position: fixed;            /* Fija el header en la parte superior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    top: 0;                     /* Asegura que esté en la parte superior */
+    z-index: 1000;              /* Asegura que el header esté encima de otros elementos */
+    border: none;               /* Elimina cualquier borde que pueda tener */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 1.5rem;          /* Reduce el tamaño del texto del título */
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Espacio entre el logo y el título */
+    border: none;               /* Elimina el borde del título */
+}
+
+/* Estilos para el contenido de la página (debajo de la barra) */
+main {
+    margin-top: 100px;  /* Asegúrate de que este margen sea suficiente para no tapar el contenido */
+    padding: 20px;
+}
+
+/* Estilo general para los párrafos */
+p {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 30px;  /* Tamaño reducido del logo (ajusta el valor según lo necesites) */
+    height: auto; /* Mantiene la proporción original del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header (barra de navegación en la parte superior) */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 10px 20px;         /* Aumenté ligeramente el padding */
+    display: flex;              /* Usamos flexbox para alinear logo y título */
+    align-items: center;        /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    text-align: left;           /* Alinea el texto a la izquierda */
+    position: fixed;            /* Fija el header en la parte superior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    top: 0;                     /* Asegura que esté en la parte superior */
+    z-index: 1000;              /* Asegura que el header esté encima de otros elementos */
+    border: none;               /* Elimina cualquier borde que pueda tener */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 1.5rem;          /* Reduce el tamaño del texto del título */
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Espacio entre el logo y el título */
+    border: none;               /* Elimina el borde del título */
+}
+
+/* Estilo para el contenido principal debajo del header */
+main {
+    margin-top: 120px;  /* Asegúrate de que este margen sea suficiente para no tapar el contenido */
+    padding: 20px;
+}
+
+/* Estilo general para los párrafos */
+p {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 30px;  /* Tamaño reducido del logo (ajusta el valor según lo necesites) */
+    height: auto; /* Mantiene la proporción original del logo */
+    display: inline-block; /* Permite que el logo esté junto al título */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el header (barra de navegación en la parte superior) */
+header {
+    background-color: #FF6F00;  /* Color de fondo de la barra de navegación */
+    color: white;               /* Color del texto */
+    padding: 10px 20px;         /* Aumenté ligeramente el padding */
+    display: flex;              /* Usamos flexbox para alinear logo, título y texto */
+    align-items: center;        /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    text-align: left;           /* Alinea el texto a la izquierda */
+    position: fixed;            /* Fija el header en la parte superior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    top: 0;                     /* Asegura que esté en la parte superior */
+    z-index: 1000;              /* Asegura que el header esté encima de otros elementos */
+    border: none;               /* Elimina cualquier borde que pueda tener */
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 1.5rem;          /* Reduce el tamaño del texto del título */
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Espacio entre el logo y el título */
+    border: none;               /* Elimina el borde del título */
+    margin-right: 20px;         /* Espacio entre el título y el texto adicional */
+}
+
+/* Estilo para el texto adicional en la barra */
+.header-text {
+    font-size: 1rem;   /* Ajusta el tamaño del texto */
+    color: white;      /* Color blanco */
+    font-family: 'Arial', sans-serif;
+    max-width: 60%;    /* Asegura que el texto no ocupe demasiado espacio */
+}
+
+/* Estilo para el contenido principal debajo del header */
+main {
+    margin-top: 120px;  /* Asegúrate de que este margen sea suficiente para no tapar el contenido */
+    padding: 20px;
+}
+
+/* Estilo general para los párrafos */
+p {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
